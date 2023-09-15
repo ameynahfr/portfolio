@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background: var(--Black, #151515);
+    color: white;
+}
+
+.hero-section {
+    position: relative;
+}
+
+.background-hero {
+    position: absolute;
+    top : 9.0625rem;
+}
+
+.info-hero {
+    position: relative;
+}
+
+
+#rings-svg {
+    width: 530px;
+height: 80px;
+flex-shrink: 0;
+}
+
+/*          DESKTOP    DESIGN            */
+
