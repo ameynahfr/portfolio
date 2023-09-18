@@ -9,6 +9,8 @@
     padding: 0;
 }
 
+/*          DESKTOP    DESIGN    STARTS   HERE        */
+
 html {
     font-size: 16px;
 }
@@ -101,6 +103,17 @@ body {
     letter-spacing: -0.15625rem; /* -2.5px converted to rem */
     width: 44.3125rem; /* 709px converted to rem */
     height: 5.5rem; /* 88px converted to rem */
+}
+
+.title-heading-2 {
+    position: absolute;
+    top: 12.375rem;
+    left: 469px;
+    font-size: 5.5rem; /* 88px converted to rem */
+    font-weight: 700;
+    line-height: 5.5rem; /* 88px converted to rem */
+    letter-spacing: -0.15625rem; /* -2.5px converted to rem */
+    height: 5.5rem;
 }
 
 .I-am {
@@ -351,7 +364,6 @@ a {
 
 .contact {
     background: var(--Dark-Grey, #242424);
-    height: 675px;
     display: grid;
     grid-template-columns: repeat(2, 445px);
     column-gap: 220px;
@@ -513,5 +525,469 @@ a {
   }
   
 
-/*          DESKTOP    DESIGN            */
+/*          DESKTOP    DESIGN    ENDS   HERE        */
 
+
+
+/*          TABLET    DESIGN    STARTS   HERE        */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Adjustments for tablet screens go here */
+    html {
+        font-size: 14px;
+    }
+
+    /* Example: Reduce the size of the profile picture */
+    .background-hero #profile-pic {
+        width: 323px;
+        height: 600px;
+        left: 445.56px;
+    }
+
+    /* Hide some elements that might not fit well on smaller screens */
+    .hidden-options {
+        display: none;
+    }
+
+    .hero-section {
+        width: 100%;
+        height: 598px;
+    }
+
+    .description {
+        top: 444px;
+        left: 32px;
+        width: 440px;
+    }
+
+
+    .title-heading {
+        top: 151px;
+        left: 32px;
+    }
+
+    .title-heading-2 {
+        top: 223px;
+        left: 32px;
+    }
+
+    .I-am {
+        top: 306px;
+        left: 32px;
+    }
+
+    .highlighted {
+        top: 306px;
+        left: 160px;
+    }
+
+    .icons {
+        left: 546px;
+    }
+
+    .username {
+        top: 29px;
+        left: 30px;
+    }
+
+    .contact-me {
+        top: 562px;
+        left: 32px;
+    }
+
+    #circle-svg {
+        top: 471px;
+        left: 702px;
+    }
+
+    hr {
+        top: 660px;
+        left: 32px;
+        width: 90%;
+    }
+
+    .tech-stack {
+        margin-left: 32px;
+        grid-template-columns: repeat(2, 345px);
+        grid-template-rows: repeat(3, 98px);
+        row-gap: 52px;
+        column-gap: 7px;
+        margin-top: 104px;
+    }
+
+    .project-heading {
+        margin-left: 32px;
+
+    }
+
+    .contact-me-2 {
+        margin-right: 33px;
+    }
+
+    .projects-display {
+        grid-template-columns: repeat(2, 345px);
+        grid-template-rows: repeat(3, 396px);
+        column-gap: 22px;
+        row-gap: 60px;
+    }
+
+    .projects-display .project img {
+        width: 345px;
+        height: 253px;
+
+    }
+
+    .projects-display .project:hover img {
+        opacity: 1;
+    }
+
+    .hidden-options {
+        display: inline-block;
+    }
+
+    .project .view-project {
+        top: 110px;
+        left: 0px;
+    }
+
+    .project .view-code {
+        top: 110px;
+        left: 42px;
+    }
+
+    .projects-display .project h3 {
+        margin-top: -10px;
+    }
+
+    .contact {
+        height: 100%;
+        width: 100%;
+        padding-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #contact-heading {
+        flex: 1;
+        width: 270px;
+        text-align: center;
+        margin-left: 170px;
+        
+    }
+
+    .contact-head {
+        max-width: 445px;
+        
+        
+    }
+
+    .contact-description {
+        text-align: center;
+        max-width: 445px;
+        flex: 1;
+    
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 445px;
+        margin-top: 50px;
+        margin-left: -100px;
+        
+    }
+
+    .hr-2 {
+        width: 90%;
+
+    }
+
+    .footer-username-icons {
+        margin-left: 30px;
+        width: 100%;
+        justify-content: unset;
+    }
+
+    .username-2 {
+        margin-right: 290px;
+    }
+
+    #rings-2 {
+        display: none;
+    }
+
+    #rings-3 {
+        display: none;
+    }
+
+}
+
+/*          TABLET    DESIGN    ENDS   HERE        */
+
+/*          MOBILE    DESIGN    STARTS   HERE        */
+
+
+
+@media screen and (max-width: 768px) {
+
+    html {
+        font-size: 12px; 
+    }
+
+    body {
+        max-width: 786px;
+        min-width: 375px;
+       
+    }
+
+    .hero-section {
+        position: unset;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        margin: 0 auto;
+        height: 1047px;
+    }
+
+    .background-hero #profile-pic {
+        position: unset;
+        margin-top: 0px; 
+
+    }
+
+    .info-hero {
+        align-items: center;
+    }
+
+    .username {
+        position: unset;
+        margin-left: 480px;
+        margin-top: -550px;
+        margin-bottom: 550px;
+    
+    
+    }
+
+    .icons {
+        position: unset;
+        margin-left: 500px;
+        margin-top: -490px;
+        margin-bottom: 490px;
+    }
+
+    .title-heading {
+        display: inline;
+        margin-left: 400px;
+        position: unset;
+    }
+
+    .title-heading-2 {
+        display: inline;
+        position: unset;
+        margin-left: 400px;
+    }
+
+    .I-am {
+        position: unset;
+        display: inline;
+        margin-left: 400px;
+
+    }
+
+    .highlighted {
+        position: unset;
+        margin-left: 12px;
+        display: inline;
+        border-bottom: 2px solid #4EE1A0;
+    }
+
+    .highlighted::after {
+        display: none;
+    }
+
+    .description {
+        margin-top: 30px;
+        position: unset;
+        margin-left: 400px;
+        margin-bottom: 50px;
+        text-align: center;
+        width: 343px;
+    }
+
+    .contact-me {
+        position: unset;
+        margin-left: 520px;
+        display: inline;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #4EE1A0;
+    }
+
+    .contact-me::after {
+        display: none;
+    }
+
+    hr {
+        position: unset;
+        margin-top: 100px;
+        
+    }
+
+    #circle-svg {
+        display: none;
+    }
+
+    #rings-svg {
+        display: none;
+    }
+
+    #rings-2 {
+        display: none;
+    }
+
+    .tech-stack {
+        grid-template-columns: 345px;
+        grid-template-rows: repeat(6, 67px);
+        margin-top: 30px;
+        text-align: center;
+        margin-left: -30px;
+    }
+
+    .tech-stack h3 {
+        text-align: center;
+    }
+
+    .project-heading {
+        margin-left: 16px;
+        font-size: 40px;
+    }
+
+    .contact-me-2 {
+        margin-right: 19px;
+    }
+
+    .projects-display {
+        grid-template-columns: 345px;
+        grid-template-rows: repeat(6, 396px);
+    
+    }
+
+    .projects-display .project img {
+        width: 345px;
+        height: 253px;
+
+    }
+
+    .projects-display .project:hover img {
+        opacity: 1;
+    }
+
+    .hidden-options {
+        display: inline-block;
+    }
+
+    .project .view-project {
+        top: 110px;
+        left: 0px;
+    }
+
+    .project .view-code {
+        top: 110px;
+        left: 42px;
+    }
+
+    .projects-display .project h3 {
+        margin-top: -10px;
+    }
+
+    #rings-3 {
+        display: none;
+    }
+
+    #contact-heading {
+        font-size: 40px;
+        flex: 1;
+        text-align: center;
+        margin-left: 180px;
+    }
+
+    .contact-description {
+        font-size: 16px;
+        width: 343px;
+        margin-left: 180px;
+    }
+
+    .contact {
+        height: 100%;
+        width: 100%;
+        padding-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #contact-heading {
+        flex: 1;
+        text-align: center;
+        margin-left: 170px;
+        
+    }
+
+    .contact-description {
+        text-align: center;
+        max-width: 343px;
+        flex: 1;
+    
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 343px;
+        margin-top: 50px;
+        margin-left: -100px;
+        
+    }
+
+    .footer {
+        max-width: 771px;
+    }
+
+    .hr-2 {
+        position: unset;
+        margin-left: 16px;
+        width: 90%;
+        margin-top: -5px;
+
+    }
+
+    .footer-username-icons {
+        justify-content: center;
+        flex-direction: row;
+        margin-left: 0px;
+        flex-wrap: wrap;
+    
+    }
+
+    .username-2 {
+
+        margin-right: 240px;
+    }
+
+    .icons-2 {
+        margin-right:270px;
+    }
+
+    
+
+    
+}
+
+/*          MOBILE    DESIGN    ENDS   HERE        */
